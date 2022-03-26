@@ -12,6 +12,8 @@ add_definitions(${CLANG_DEFINITIONS})
 
 list(APPEND CMAKE_MODULE_PATH ${LLVM_CMAKE_DIR})
 include(AddLLVM)
+list(APPEND CMAKE_MODULE_PATH ${CLANG_CMAKE_DIR})
+include(AddClang)
 
 set(LLVM_LINK_COMPONENTS
 Support
