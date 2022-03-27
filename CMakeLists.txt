@@ -1,4 +1,4 @@
-project(test-project)
+project(LLVMOufOfTreeTemplate-project)
 
 find_package(LLVM REQUIRED CONFIG)
 include_directories(${LLVM_INCLUDE_DIRS})
@@ -20,7 +20,7 @@ Support
 Analysis
 )
 
-add_llvm_executable(test 
+add_llvm_executable(LLVMOufOfTreeTemplate 
 test.cpp
 )
 
